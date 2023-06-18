@@ -1,0 +1,713 @@
+<!-- 
+  - #HEADER
+-->
+
+<header class="header">
+
+  <div class="header-top">
+    <div class="container">
+
+      <ul class="contact-list">
+
+        <li class="contact-item">
+          <ion-icon name="mail-outline"></ion-icon>
+
+          <a href="mailto:info@example.com" class="contact-link">info@example.com</a>
+        </li>
+
+        <li class="contact-item">
+          <ion-icon name="call-outline"></ion-icon>
+
+          <a href="tel:+000000000" class="contact-link">+91-0000-0000-0000</a>
+        </li>
+
+      </ul>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="header-bottom" data-header>
+    <div class="container">
+
+      <a href="#" class="logo" style="color: red">Solo - it</a>
+
+      <nav class="navbar container" data-navbar [ngClass]="status ? 'active' : ''">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Главная</a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>Преимущества</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>О нас</a>
+          </li>
+
+          <li>
+            <a href="#speak" class="navbar-link" data-nav-link>Отзывы</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="#" class="btn">Контакты</a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler (click)="addToggle()">
+        <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+      </button>
+
+    </div>
+  </div>
+
+</header>
+
+
+
+
+
+<main>
+  <article>
+
+    <!-- 
+      - #HERO
+    -->
+
+    <section class="section hero" id="home" style="background-image: url('assets/images/hero-bg.png')"
+      aria-label="hero">
+      <div class="container">
+
+        <div class="hero-content">
+
+          <!-- <p class="section-subtitle">Welcome To Dentelo</p> -->
+
+          <h1 class="h1 hero-title">WhatsChat интеграция с WhatsApp</h1>
+
+          <p class="hero-text">
+            Приложение WhatsChat предназначено 
+            для ведения общения сотрудника 
+            компании с клиентом в среде WhatsApp.
+          </p>
+
+          <form action="" class="hero-form">
+            <input type="email" name="email_address" aria-label="email" placeholder="E-mail..." required
+              class="email-field">
+
+            <button type="submit" class="btn">Попробовать</button>
+          </form>
+
+        </div>
+
+        <figure class="hero-banner">
+          <img src="assets/images/hero-banner.png" width="587" height="839" alt="hero banner" class="w-100">
+        </figure>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- 
+      - #SERVICE
+    -->
+
+    <section class="section service" id="service" aria-label="service">
+      <div class="container">
+
+        <!-- <p class="section-subtitle text-center">Преимущества</p> -->
+
+        <h2 class="h2 section-title text-center">Преимущества</h2>
+
+        <ul class="service-list">
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/service-icon-1.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Безграничное общение</h3>
+
+                <p class="card-text">
+                  Возможность бесплатного инициирования общения с клиентом 
+                  со стороны менеджера компании, без ограничение на количество сессий этого общения.
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/service-icon-2.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Маркетинг и продажи</h3>
+
+                <p class="card-text">
+                  Презентация клиенту товаров/услуг компании или изменений в них.
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/service-icon-3.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Опросы и наймы</h3>
+
+                <p class="card-text">
+                  Проведение опросов соискателей при найме новых сотрудников с возможностью автоматизации обработки результатов этих опросов.
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="service-banner">
+            <figure>
+              <img src="assets/images/service-banner.png" width="409" height="467" loading="lazy"
+                alt="service banner" class="w-100">
+            </figure>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/service-icon-4.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Рассылка в Whatsapp</h3>
+
+                <p class="card-text">
+                  Увеличьте продажи путем созданием рассылки раз 1-2 недели. 
+                  Известно что до 90% писем открывается из таких рассылок и это приводит к увлечению прибыли на 10%..
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/service-icon-5.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Нужен только телефон</h3>
+
+                <p class="card-text">
+                  WhatsChat позволяет отправлять сообщение в Whatsapp клиенту из его карточки..
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/service-icon-6.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Чат-боты помощники</h3>
+
+                <p class="card-text">
+                  возможность использования чат-ботов для автоматизации рутинных процессов.
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- 
+      - #ABOUT
+    -->
+
+    <section class="section about" aria-label="about">
+      <div class="container">
+
+        <figure class="about-banner">
+          <iframe src="https://www.youtube.com/embed/zhEC3hoLTJo?enablejsapi=1" width="470" height="538" loading="lazy" alt="about banner"
+            class="w-100"></iframe>
+        </figure>
+
+        <div class="about-content">
+
+          <!-- <p class="section-subtitle">About Us</p> -->
+
+          <h2  id="about" class="h2 section-title" style="text-align: center;">О нас</h2>
+
+          <p class="section-text section-text-1">
+            С 2013 года наша студия является Золотым сертифицированным партнёром «1С-Битрикс» 
+            - лидера Российского рынка разработок систем управления веб-ресурсами. 11 лет на рынке, 
+            обучаем программистов с нуля. 
+          </p>
+
+          <p class="section-text">
+            Специализация нашей компании - сложные нестандартные решения: 
+            интернет-магазины, веб-сервисы, корпоративные порталы, а также индивидуальные интернет-проекты 
+            на платформе «1С-Битрикс»; разработка, интеграция и внедрение it-проектов и корпоративных порталов на базе Битрикс24.
+          </p>
+
+          <a href="#" class="btn">Узнать больше</a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- 
+      - #DOCTOR
+    -->
+
+    <section id="speak" class="section doctor" aria-label="doctor">
+      <div class="container">
+
+        <!-- <p class="section-subtitle text-center">Our Doctor</p> -->
+
+        <h2 class="h2 section-title text-center">Отзывы о WhatsChat</h2>
+
+        <ul class="has-scrollbar">
+
+          <li class="scrollbar-item">
+            <div class="doctor-card">
+
+              <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                <img src="assets/images/doctor-1.jpg" width="460" height="500" loading="lazy" alt="Howard Holmes"
+                  class="img-cover">
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Иван Иванов</a>
+              </h3>
+
+              <p class="card-subtitle" style="color: hsl(0, 0%, 47%); text-align: start;">
+                Приложение отличное, все устраивает. Хороший помощник для бизнеса
+              </p>
+
+              <ul class="card-social-list">
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="doctor-card">
+
+              <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                <img src="assets/images/doctor-2.jpg" width="460" height="500" loading="lazy" alt="Ella Thompson"
+                  class="img-cover">
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Ольга Петрова</a>
+              </h3>
+
+              <p class="card-subtitle" style="color: hsl(0, 0%, 47%); text-align: start;">
+                Приложение отличное, все устраивает. Хороший помощник для бизнеса
+              </p>
+
+              <ul class="card-social-list">
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="doctor-card">
+
+              <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                <img src="assets/images/doctor-3.jpg" width="460" height="500" loading="lazy" alt="Vincent Cooper"
+                  class="img-cover">
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Петр Петров</a>
+              </h3>
+
+              <p class="card-subtitle" style="color: hsl(0, 0%, 47%); text-align: start;">
+                Приложение отличное, все устраивает. Хороший помощник для бизнеса
+              </p>
+
+              <ul class="card-social-list">
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="doctor-card">
+
+              <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                <img src="assets/images/doctor-4.jpg" width="460" height="500" loading="lazy" alt="Danielle Bryant"
+                  class="img-cover">
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Анна Романова</a>
+              </h3>
+
+              <p class="card-subtitle" style="color: hsl(0, 0%, 47%); text-align: start;">
+                Приложение отличное, все устраивает. Хороший помощник для бизнеса
+              </p>
+
+              <ul class="card-social-list">
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- 
+      - #CTA
+    -->
+
+    <section class="section cta" aria-label="cta">
+      <div class="container">
+
+        <figure class="cta-banner">
+          <img src="assets/images/cta-banner.png" width="1056" height="1076" loading="lazy" alt="cta banner"
+            class="w-100" style="padding-top: 83px;">
+        </figure>
+
+        <div class="cta-content">
+
+          <p class="section-subtitle" style="text-transform: none;">Тестовый период на 3 дня WhatChat</p>
+
+          <h2 class="h2 section-title">Оформите подписку сейчас</h2>
+
+          <a href="#form" class="btn">Попробовать</a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" style="margin-block-end: 10px">
+      <div class="container">
+
+        <figure class="about-banner">
+          <img src="../assets/images/bottom.png" width="470" height="538" loading="lazy" alt="about banner"
+            class="w-100" style="border-radius: 5px;">
+        </figure>
+
+      </div>
+      </section>
+
+
+      <section id="form" class="section contact1 has-bg-image" aria-labelledby="contact-label1"
+        style="background-image: url('./assets/images/contact-bg.png')">
+        <div class="container1">
+          <form action="" class="contact-form1">
+            <h2 class="headline-sm" id="contact-label" style="font-size: 48px;">Подключить WhatChat</h2>
+            <p class="contact-text1 body-md">
+              *После отправки формы вам напишет наш робот из WhatsChat в WhatsApp, и вы проверите его работу в действии. Звонок бесплатный.
+            </p>
+            <div class="wrapper">
+              <div>
+                <label for="name" class="label">Имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя *" required class="input-field">
+              </div>
+              <div>
+                <label for="tel" class="label">Телефон</label>
+                <input type="tel" name="phone" id="phone" placeholder="Телефон *" required class="input-field" data-inputmask="'mask': '+9 (999) 999-99-99'">
+              </div>
+            </div>
+            <label for="subject" class="label">Пожелания</label>
+            <input type="text" name="subject" id="subject" placeholder="" class="input-field">
+            <a href="#" class="btn btn-tertiary">Отправить</a>
+          </form>
+        </div>
+      </section>
+
+  </article>
+</main>
+
+
+
+
+
+<!-- 
+  - #FOOTER
+-->
+
+<footer id="footer" class="footer">
+
+  <div class="footer-top section" style="grid-template-columns: 1.5fr 1fr 1fr;">
+    <div class="container">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">Solo - it</a>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Сайт</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"></ion-icon>
+
+            <span class="span">Главная</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#service" class="footer-link">
+            <ion-icon name="add-outline"></ion-icon>
+
+            <span class="span">Преимущества</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#about" class="footer-link">
+            <ion-icon name="add-outline"></ion-icon>
+
+            <span class="span">О нас</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#speak" class="footer-link">
+            <ion-icon name="add-outline"></ion-icon>
+
+            <span class="span">Отзывы</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#footer" class="footer-link">
+            <ion-icon name="add-outline"></ion-icon>
+
+            <span class="span">Контакты</span>
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Контакты</p>
+        </li>
+
+        <li class="footer-item">
+          <div class="item-icon">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+
+          <address class="item-text">
+            г. Самара,<br>
+            Московское шоссе, д. 41, оф. 407
+          </address>
+        </li>
+
+        <li class="footer-item">
+          <div class="item-icon">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <a href="tel:+000000000" class="footer-link">+91-000-000-0000</a>
+        </li>
+
+        <li class="footer-item">
+          <div class="item-icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+
+          <a href="mailto:help@example.com" class="footer-link">help@example.com</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2023 Все права защищены.
+      </p>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+</footer>
